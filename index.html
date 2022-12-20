@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="grid place-content-center min-h-screen bg-veryDarkBlueMain p-6">
+    <main
+      class="max-w-[348px] p-6 bg-veryDarkBlueCard rounded-xl shadow-[0px_5px_21px_8px_rgba(0,0,0,0.3)]"
+    >
+      <div class="relative cursor-pointer mb-6">
+        <img
+          class="rounded-[10px]"
+          src="./src/images/image-equilibrium.jpg"
+          alt="image equilibrium"
+        />
+        <span
+          class="absolute w-full h-full top-0 left-0 bg-cyan-50 rounded-[10px] opacity-0 hover:opacity-100 transition-all duration-500"
+        >
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src="./src/images/icon-view.svg"
+            alt="icon view"
+          />
+        </span>
+      </div>
+
+      <h1 class="font-serif font-semibold text-[22px] text-white mb-4">
+        <a href="" class="hover:text-cyan transition-all duration-300"
+          >Equilibrium #3429</a
+        >
+      </h1>
+      <p class="font-serif font-light text-base text-softBlue mb-5 sm:text-lg">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="flex justify-between mb-4">
+        <div class="flex items-center">
+          <img
+            class="mr-2"
+            src="./src/images/icon-ethereum.svg"
+            alt="icon ethereum"
+          />
+          <span class="font-serif font-normal text-lg text-cyan"
+            >0.041 ETH</span
+          >
+        </div>
+        <div class="flex items-center">
+          <img
+            class="mr-2"
+            src="./src/images/icon-clock.svg"
+            alt="icon clock"
+          />
+          <span class="font-serif font-normal text-lg text-softBlue"
+            >3 days left</span
+          >
+        </div>
+      </div>
+      <div class="border-t-[1px] border-softBlue-50 flex items-center pt-4">
+        <img
+          class="w-8 h-8 border border-white rounded-full mr-4"
+          src="./src/images/image-avatar.png"
+          alt="image avatar"
+        />
+        <span class="font-serif font-light text-base text-softBlue"
+          >Creation of
+          <a
+            href=""
+            class="text-white hover:text-cyan transition-all duration-300"
+            >Jules Wyvern</a
+          >
+        </span>
+      </div>
+    </main>
+
+    <!-- <div>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
